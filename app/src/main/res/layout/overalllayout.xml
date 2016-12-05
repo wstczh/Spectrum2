@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <activitytest.example.com.frequency.GridRelativeLayoutBig
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridbig"
+        ></activitytest.example.com.frequency.GridRelativeLayoutBig>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示"
+        android:id="@+id/reveal"
+        android:layout_alignBottom="@+id/gridbig"
+        />
+
+</RelativeLayout>

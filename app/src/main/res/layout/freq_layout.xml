@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/traceoute_rootview1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <activitytest.example.com.frequency.GridRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="80dp"></activitytest.example.com.frequency.GridRelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="70dp"
+                    android:textSize="20dp"
+                    android:id="@+id/freq_texttitle"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="150dp"
+                    android:textSize="20dp"
+                    android:id="@+id/freq_textnumber"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/freq_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隐藏界面" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/freq_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Frequency" />
+
+                <TextView
+                    android:id="@+id/freq_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="中心频率" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/freq_edit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textSize="15dp"
+
+                        ></EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="GHz"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/freq_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="起始频率" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/freq_edit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textSize="15dp"
+
+                        ></EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="GHz"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/freq_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="终止频率" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/freq_edit3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textSize="15dp"
+
+                        ></EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="GHz"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/freq_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="频率偏移" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/freq_edit4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textSize="15dp"
+
+                        ></EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Hz"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/freq_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="中频步长" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/freq_edit5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textSize="15dp"
+
+                        ></EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="kHz"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/freq_text7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:text="信号追踪" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/freq_open"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/blue_normal"
+                            android:text="打开" />
+
+                        <Button
+                            android:id="@+id/freq_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/blue_normal"
+                            android:text="关闭"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/freq_text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="峰值→中频"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="1/2" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"></LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+            <!--复用键-->
+            <Button
+                android:id="@+id/freq_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_back" />
+
+            <Button
+                android:id="@+id/freq_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_function" />
+
+            <Button
+                android:id="@+id/freq_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_function" />
+
+            <Button
+                android:id="@+id/freq_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_function" />
+
+            <Button
+                android:id="@+id/freq_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_function" />
+
+            <Button
+                android:id="@+id/freq_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_function" />
+
+            <Button
+                android:id="@+id/freq_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_function" />
+
+            <Button
+                android:id="@+id/freq_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_function" />
+
+            <Button
+                android:id="@+id/freq_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/select_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <!--FREQ，SPAN，AMPT三个主要键-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/freq_freq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_black"
+                    android:text="FREQ" />
+
+                <Button
+                    android:id="@+id/freq_span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_black"
+                    android:text="SPAN" />
+
+                <Button
+                    android:id="@+id/freq_ampt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_black"
+                    android:text="AMPT" />
+
+                <Button
+
+                    android:id="@+id/freq_demodulation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_black"
+                    android:text="Demo" />
+
+                <Button
+                    android:id="@+id/freq_orientation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_black"
+                    android:text="Orie" />
+
+            </LinearLayout>
+
+            <!--其余功能键-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+
+                        android:id="@+id/freq_bw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="BW/Det"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_sweep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="Sweep/Trig"
+                        android:textColor="#000000" />
+
+                    <Button
+
+                        android:id="@+id/freq_marker1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="Marker"
+                        android:textColor="#000000" />
+
+                    <Button
+
+                        android:id="@+id/freq_marker2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="Marker→"
+                        android:textColor="#000000" />
+
+                    <Button
+
+                        android:id="@+id/freq_auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_lightblack"
+                        android:text="Auto"
+                        android:textColor="#000000"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <Button
+
+                        android:id="@+id/freq_trace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="Trace/P/F"
+                        android:textColor="#000000" />
+
+                    <Button
+
+                        android:id="@+id/freq_tg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_lightblack"
+                        android:text="TG"
+                        android:textColor="#000000" />
+
+                    <Button
+
+                        android:id="@+id/freq_markerfctn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="MarkerFctn"
+                        android:textColor="#000000" />
+
+                    <Button
+
+                        android:id="@+id/freq_peak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="Peak"
+                        android:textColor="#000000" />
+
+                    <Button
+
+                        android:id="@+id/freq_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="User"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <Button
+
+                        android:id="@+id/freq_meas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_lightblack"
+                        android:text="Meas"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_meassetup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="MeasSetup"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_demod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="Demod"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/freq_system"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="System"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_printsetup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="PrintSetup"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="Storage"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <!--數字按鈕和旋鈕-->
+                    <Button
+                        android:id="@+id/freq_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="1"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_number4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="4"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_number7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="7"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_numberdot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="."
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/freq_number2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="2"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_number5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="5"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_number8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="8"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_number0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="0"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/freq_number3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="3"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_number6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="6"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_number9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="9"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_numberadd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_white"
+                        android:text="+/-"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/freq_esc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_lightblack"
+                        android:text="Esc"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_lightblack"
+                        android:text="Back"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/freq_enter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_lightblack"
+                        android:text="Enter"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="@mipmap/a"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/freq_downarrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_downarrow" />
+
+                    <Button
+                        android:id="@+id/freq_uparrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_uparrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
